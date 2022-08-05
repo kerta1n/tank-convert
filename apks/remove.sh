@@ -1,0 +1,10 @@
+adb uninstall com.google.android.apps.mediashell
+adb uninstall jp.co.rarity.tvweb
+adb uninstall com.spotify.tv.android
+adb uninstall cm.aptoidetv.pt
+adb uninstall com.amazon.amazonvideo.livingroom
+adb uninstall com.teamsmart.videomanager.tv
+adb uninstall com.topjohnwu.magisk
+adb uninstall com.carriez.flutter_hbb
+adb uninstall com.netflix.ninja
+adb uninstall com.disney.disneyplus

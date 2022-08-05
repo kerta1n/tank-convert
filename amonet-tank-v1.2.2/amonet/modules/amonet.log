@@ -1,0 +1,532 @@
+[2019-03-25 16:46:28.410482] Waiting for preloader
+[2019-03-25 16:46:40.544855] Found port = /dev/ttyACM3
+[2019-03-25 16:46:40.567393] Handshake
+[2019-03-25 16:46:40.587540] Preloader ready, sending FACTORYM
+[2019-03-25 17:20:41.850920] Waiting for preloader
+[2019-03-25 17:20:50.505225] Found port = /dev/ttyACM3
+[2019-03-25 17:20:50.528957] Handshake
+[2019-03-25 17:20:50.549049] Preloader ready, sending FACTORYM
+[2019-03-25 17:24:01.751215] Waiting for bootrom
+[2019-03-25 17:24:07.414961] Found port = /dev/ttyACM3
+[2019-03-25 17:24:07.415697] Handshake
+[2019-03-25 17:24:07.416439] Disable watchdog
+[2019-03-25 17:25:58.019862] Waiting for bootrom
+[2019-03-25 17:26:05.297220] Found port = /dev/ttyACM3
+[2019-03-25 17:26:05.298011] Handshake
+[2019-03-25 17:26:05.298795] Disable watchdog
+[2019-03-25 17:26:06.483520] Init crypto engine
+[2019-03-25 17:26:06.508381] Disable caches
+[2019-03-25 17:26:06.508761] Disable bootrom range checks
+[2019-03-25 17:26:06.519944] Load payload from ../brom-payload/build/payload.bin = 0x4550 bytes
+[2019-03-25 17:26:06.523697] Send payload
+[2019-03-25 17:26:07.045803] Let's rock
+[2019-03-25 17:26:07.046530] Wait for the payload to come online...
+[2019-03-25 17:26:07.528869] all good
+[2019-03-25 17:26:07.529106] Check GPT
+[2019-03-25 17:26:07.846959] gpt_parsed = {'KB': (2048, 2048), 'DKB': (4096, 2048), 'EXPDB': (6144, 35584), 'UBOOT': (41728, 2048), 'boot': (43776, 32768), 'recovery': (76544, 32768), 'MISC': (109312, 1024), 'LOGO': (110336, 7168), 'TEE1': (117504, 10240), 'TEE2': (127744, 10240), 'system': (137984, 1761280), 'cache': (1899264, 512000), 'userdata': (2411264, 12858591), '': (0, 1)}
+[2019-03-25 17:26:07.847213] Check boot0
+[2019-03-25 17:26:08.074096] Check rpmb
+[2019-03-25 17:26:08.283218] Downgrade rpmb
+[2019-03-25 17:26:08.285262] Recheck rpmb
+[2019-03-25 17:26:09.226876] rpmb downgrade ok
+[2019-03-25 17:26:09.227151] Flash lk-payload
+[2019-03-25 17:26:10.170033] Flash preloader
+[2019-03-25 17:26:40.282483] Flash lk
+[2019-03-25 17:26:57.418193] Inject microloader
+[2019-03-25 17:26:57.857848] Force fastboot
+[2019-03-25 17:30:16.238246] Waiting for preloader
+[2019-03-25 17:30:20.605480] Found port = /dev/ttyACM3
+[2019-03-25 17:30:20.629383] Handshake
+[2019-03-25 17:30:20.649375] Preloader ready, sending FACTORYM
+[2019-03-25 17:31:05.644288] Waiting for preloader
+[2019-03-25 17:31:09.744884] Found port = /dev/ttyACM3
+[2019-03-25 17:31:09.768472] Handshake
+[2019-03-25 17:31:09.788603] Preloader ready, sending FACTFACT
+[2019-03-25 17:34:47.151845] Waiting for bootrom
+[2019-03-25 17:35:48.537175] Found port = /dev/ttyACM3
+[2019-03-25 17:35:48.537874] Handshake
+[2019-03-25 17:35:48.538431] Disable watchdog
+[2019-03-25 17:35:50.967245] Init crypto engine
+[2019-03-25 17:35:50.984711] Disable caches
+[2019-03-25 17:35:50.985047] Disable bootrom range checks
+[2019-03-25 17:35:50.995968] Load payload from ../brom-payload/build/payload.bin = 0x4550 bytes
+[2019-03-25 17:35:50.999508] Send payload
+[2019-03-25 17:35:51.482599] Let's rock
+[2019-03-25 17:35:51.483286] Wait for the payload to come online...
+[2019-03-25 17:35:51.965750] all good
+[2019-03-25 17:35:51.966271] Check GPT
+[2019-03-25 17:35:52.283924] gpt_parsed = {'KB': (2048, 2048), 'DKB': (4096, 2048), 'EXPDB': (6144, 35584), 'UBOOT': (41728, 2048), 'boot': (43776, 32768), 'recovery': (76544, 32768), 'MISC': (109312, 1024), 'LOGO': (110336, 7168), 'TEE1': (117504, 10240), 'TEE2': (127744, 10240), 'system': (137984, 1761280), 'cache': (1899264, 512000), 'userdata': (2411264, 12858591), '': (0, 1)}
+[2019-03-25 17:35:52.284205] Check boot0
+[2019-03-25 17:35:52.520207] Check rpmb
+[2019-03-25 17:35:52.729310] Clear preloader header
+[2019-03-25 17:35:53.948859] Downgrade rpmb
+[2019-03-25 17:35:53.950726] Recheck rpmb
+[2019-03-25 17:35:55.013485] rpmb downgrade ok
+[2019-03-25 17:35:55.013850] Flash lk-payload
+[2019-03-25 17:35:55.957139] Flash tz
+[2019-03-25 17:36:48.899886] Flash lk
+[2019-03-25 17:37:05.447938] Inject microloader
+[2019-03-25 17:37:05.888454] Force fastboot
+[2019-03-25 17:37:06.180883] Flash preloader
+[2019-03-25 17:37:36.182236] Reboot to unlocked fastboot
+[2019-03-25 17:39:24.614303] Waiting for bootrom
+[2019-03-25 17:39:27.870678] Found port = /dev/ttyACM3
+[2019-03-25 17:39:27.871422] Handshake
+[2019-03-25 17:39:27.872333] Disable watchdog
+[2019-03-25 17:39:28.427385] Init crypto engine
+[2019-03-25 17:39:28.446730] Disable caches
+[2019-03-25 17:39:28.447125] Disable bootrom range checks
+[2019-03-25 17:39:28.457725] Load payload from ../brom-payload/build/payload.bin = 0x4550 bytes
+[2019-03-25 17:39:28.461259] Send payload
+[2019-03-25 17:39:28.974550] Let's rock
+[2019-03-25 17:39:28.975320] Wait for the payload to come online...
+[2019-03-25 17:39:29.457791] all good
+[2019-03-25 17:39:29.458292] Check GPT
+[2019-03-25 17:39:29.774690] gpt_parsed = {'KB': (2048, 2048), 'DKB': (4096, 2048), 'EXPDB': (6144, 35584), 'UBOOT': (41728, 2048), 'boot': (43776, 32768), 'recovery': (76544, 32768), 'MISC': (109312, 1024), 'LOGO': (110336, 7168), 'TEE1': (117504, 10240), 'TEE2': (127744, 10240), 'system': (137984, 1761280), 'cache': (1899264, 512000), 'userdata': (2411264, 12858591), '': (0, 1)}
+[2019-03-25 17:39:29.774903] Check boot0
+[2019-03-25 17:39:30.010883] Check rpmb
+[2019-03-25 17:39:30.220088] Clear preloader header
+[2019-03-25 17:39:31.440314] Downgrade rpmb
+[2019-03-25 17:39:31.442420] Recheck rpmb
+[2019-03-25 17:39:32.508169] rpmb downgrade ok
+[2019-03-25 17:39:32.508476] Flash lk-payload
+[2019-03-25 17:39:33.451650] Flash tz
+[2019-03-25 17:40:26.039051] Flash lk
+[2019-03-25 17:40:42.597505] Inject microloader
+[2019-03-25 17:40:43.037810] Force fastboot
+[2019-03-25 17:40:43.330384] Flash preloader
+[2019-03-25 17:41:13.327396] Reboot to unlocked fastboot
+[2019-03-25 17:43:18.814272] Waiting for preloader
+[2019-03-25 17:43:22.647407] Found port = /dev/ttyACM3
+[2019-03-25 17:43:22.669985] Handshake
+[2019-03-25 17:43:22.689973] Preloader ready, sending FACTORYM
+[2019-03-25 17:44:06.764700] Waiting for preloader
+[2019-03-25 17:44:11.138544] Found port = /dev/ttyACM3
+[2019-03-25 17:44:11.162405] Handshake
+[2019-03-25 17:44:11.182510] Preloader ready, sending FACTORYM
+[2019-03-25 17:45:50.920053] Waiting for preloader
+[2019-03-25 17:45:54.752964] Found port = /dev/ttyACM3
+[2019-03-25 17:45:54.777171] Handshake
+[2019-03-25 17:45:54.797270] Preloader ready, sending FACTFACT
+[2019-03-25 17:46:37.636462] Waiting for bootrom
+[2019-03-25 17:47:04.744278] Found port = /dev/ttyACM3
+[2019-03-25 17:47:04.745023] Handshake
+[2019-03-25 17:47:04.745687] Disable watchdog
+[2019-03-25 17:47:06.206055] Init crypto engine
+[2019-03-25 17:47:06.230105] Disable caches
+[2019-03-25 17:47:06.230540] Disable bootrom range checks
+[2019-03-25 17:47:06.240964] Load payload from ../brom-payload/build/payload.bin = 0x4550 bytes
+[2019-03-25 17:47:06.243767] Send payload
+[2019-03-25 17:47:06.762936] Let's rock
+[2019-03-25 17:47:06.763562] Wait for the payload to come online...
+[2019-03-25 17:47:07.246020] all good
+[2019-03-25 17:47:07.246475] Check GPT
+[2019-03-25 17:47:07.563385] gpt_parsed = {'KB': (2048, 2048), 'DKB': (4096, 2048), 'EXPDB': (6144, 35584), 'UBOOT': (41728, 2048), 'boot': (43776, 32768), 'recovery': (76544, 32768), 'MISC': (109312, 1024), 'LOGO': (110336, 7168), 'TEE1': (117504, 10240), 'TEE2': (127744, 10240), 'system': (137984, 1761280), 'cache': (1899264, 512000), 'userdata': (2411264, 12858591), '': (0, 1)}
+[2019-03-25 17:47:07.563628] Check boot0
+[2019-03-25 17:47:07.799549] Check rpmb
+[2019-03-25 17:47:08.008501] Clear preloader header
+[2019-03-25 17:47:09.227698] Downgrade rpmb
+[2019-03-25 17:47:09.229585] Recheck rpmb
+[2019-03-25 17:47:10.296518] rpmb downgrade ok
+[2019-03-25 17:47:10.296905] Flash lk-payload
+[2019-03-25 17:47:11.239474] Flash tz
+[2019-03-25 17:48:03.705703] Flash lk
+[2019-03-25 17:48:20.277635] Inject microloader
+[2019-03-25 17:48:20.718779] Force fastboot
+[2019-03-25 17:48:21.011190] Flash preloader
+[2019-03-25 17:48:51.029032] Reboot to unlocked fastboot
+[2019-03-25 17:53:28.952748] Waiting for bootrom
+[2019-03-25 17:53:32.475243] Found port = /dev/ttyACM3
+[2019-03-25 17:53:32.475981] Handshake
+[2019-03-25 17:53:32.476808] Disable watchdog
+[2019-03-25 17:53:33.398766] Init crypto engine
+[2019-03-25 17:53:33.417892] Disable caches
+[2019-03-25 17:53:33.418245] Disable bootrom range checks
+[2019-03-25 17:53:33.429197] Load payload from ../brom-payload/build/payload.bin = 0x4550 bytes
+[2019-03-25 17:53:33.433398] Send payload
+[2019-03-25 17:53:33.947175] Let's rock
+[2019-03-25 17:53:33.947839] Wait for the payload to come online...
+[2019-03-25 17:53:34.430371] all good
+[2019-03-25 17:53:34.430882] Check GPT
+[2019-03-25 17:53:34.748900] gpt_parsed = {'KB': (2048, 2048), 'DKB': (4096, 2048), 'EXPDB': (6144, 35584), 'UBOOT': (41728, 2048), 'boot': (43776, 32768), 'recovery': (76544, 32768), 'MISC': (109312, 1024), 'LOGO': (110336, 7168), 'TEE1': (117504, 10240), 'TEE2': (127744, 10240), 'system': (137984, 1761280), 'cache': (1899264, 512000), 'userdata': (2411264, 12858591), '': (0, 1)}
+[2019-03-25 17:53:34.749154] Check boot0
+[2019-03-25 17:53:34.976282] Check rpmb
+[2019-03-25 17:53:35.185531] Clear preloader header
+[2019-03-25 17:53:36.407212] Downgrade rpmb
+[2019-03-25 17:53:36.408960] Recheck rpmb
+[2019-03-25 17:53:37.479386] rpmb downgrade ok
+[2019-03-25 17:53:37.479719] Flash lk-payload
+[2019-03-25 17:53:38.424148] Flash tz
+[2019-03-25 17:54:30.984970] Flash lk
+[2019-03-25 17:54:47.528986] Inject microloader
+[2019-03-25 17:54:47.970768] Force fastboot
+[2019-03-25 17:54:48.263293] Flash preloader
+[2019-03-25 17:55:18.304340] Reboot to unlocked fastboot
+[2019-03-25 17:56:51.442621] Waiting for bootrom
+[2019-03-25 17:56:55.236692] Found port = /dev/ttyACM3
+[2019-03-25 17:56:55.237474] Handshake
+[2019-03-25 17:56:55.238260] Disable watchdog
+[2019-03-25 17:57:08.450413] Init crypto engine
+[2019-03-25 17:57:08.470605] Disable caches
+[2019-03-25 17:57:08.471026] Disable bootrom range checks
+[2019-03-25 17:57:08.484789] Load payload from ../brom-payload/build/payload.bin = 0x4550 bytes
+[2019-03-25 17:57:08.488688] Send payload
+[2019-03-25 17:57:08.986442] Let's rock
+[2019-03-25 17:57:08.987087] Wait for the payload to come online...
+[2019-03-25 17:57:09.469527] all good
+[2019-03-25 17:57:09.469962] Check GPT
+[2019-03-25 17:57:09.787358] gpt_parsed = {'KB': (2048, 2048), 'DKB': (4096, 2048), 'EXPDB': (6144, 35584), 'UBOOT': (41728, 2048), 'boot': (43776, 32768), 'recovery': (76544, 32768), 'MISC': (109312, 1024), 'LOGO': (110336, 7168), 'TEE1': (117504, 10240), 'TEE2': (127744, 10240), 'system': (137984, 1761280), 'cache': (1899264, 512000), 'userdata': (2411264, 12858591), '': (0, 1)}
+[2019-03-25 17:57:09.787619] Check boot0
+[2019-03-25 17:57:10.014437] Check rpmb
+[2019-03-25 17:57:10.223491] Clear preloader header
+[2019-03-25 17:57:11.445416] Downgrade rpmb
+[2019-03-25 17:57:11.447313] Recheck rpmb
+[2019-03-25 17:57:12.519754] rpmb downgrade ok
+[2019-03-25 17:57:12.520098] Flash lk-payload
+[2019-03-25 17:57:13.463831] Flash tz
+[2019-03-25 17:58:05.967305] Flash lk
+[2019-03-25 17:58:22.538225] Inject microloader
+[2019-03-25 17:58:22.936922] Force fastboot
+[2019-03-25 17:58:23.228882] Flash preloader
+[2019-03-25 17:58:53.242060] Reboot to unlocked fastboot
+[2019-03-25 18:00:47.337865] Waiting for preloader
+[2019-03-25 18:00:51.437563] Found port = /dev/ttyACM3
+[2019-03-25 18:00:51.460823] Handshake
+[2019-03-25 18:00:51.480978] Preloader ready, sending FACTORYM
+[2019-03-25 18:02:38.279700] Waiting for preloader
+[2019-03-25 18:03:12.891488] Found port = /dev/ttyACM3
+[2019-03-25 18:03:12.892148] Handshake
+[2019-03-25 18:03:17.221652] Waiting for preloader
+[2019-03-25 18:03:24.451953] Waiting for bootrom
+[2019-03-25 18:03:42.175765] Found port = /dev/ttyACM3
+[2019-03-25 18:03:42.176465] Handshake
+[2019-03-25 18:03:42.177100] Disable watchdog
+[2019-03-25 18:03:44.159506] Init crypto engine
+[2019-03-25 18:03:44.179014] Disable caches
+[2019-03-25 18:03:44.179427] Disable bootrom range checks
+[2019-03-25 18:03:44.191805] Load payload from ../brom-payload/build/payload.bin = 0x4550 bytes
+[2019-03-25 18:03:44.195665] Send payload
+[2019-03-25 18:03:44.703780] Let's rock
+[2019-03-25 18:03:44.704483] Wait for the payload to come online...
+[2019-03-25 18:03:45.186823] all good
+[2019-03-25 18:03:45.187254] Check GPT
+[2019-03-25 18:03:45.503131] gpt_parsed = {'KB': (2048, 2048), 'DKB': (4096, 2048), 'EXPDB': (6144, 35584), 'UBOOT': (41728, 2048), 'boot': (43776, 32768), 'recovery': (76544, 32768), 'MISC': (109312, 1024), 'LOGO': (110336, 7168), 'TEE1': (117504, 10240), 'TEE2': (127744, 10240), 'system': (137984, 1761280), 'cache': (1899264, 512000), 'userdata': (2411264, 12858591), '': (0, 1)}
+[2019-03-25 18:03:45.503261] Check boot0
+[2019-03-25 18:03:45.730139] Check rpmb
+[2019-03-25 18:03:45.939338] Clear preloader header
+[2019-03-25 18:03:47.159569] Downgrade rpmb
+[2019-03-25 18:03:47.161569] Recheck rpmb
+[2019-03-25 18:03:48.235792] rpmb downgrade ok
+[2019-03-25 18:03:48.236120] Flash lk-payload
+[2019-03-25 18:03:49.180526] Flash tz
+[2019-03-25 18:04:42.117432] Flash lk
+[2019-03-25 18:04:52.723554] Waiting for bootrom
+[2019-03-25 18:04:55.442314] Found port = /dev/ttyACM3
+[2019-03-25 18:04:55.443040] Handshake
+[2019-03-25 18:04:55.443664] Disable watchdog
+[2019-03-25 18:04:56.194814] Init crypto engine
+[2019-03-25 18:04:56.214592] Disable caches
+[2019-03-25 18:04:56.215020] Disable bootrom range checks
+[2019-03-25 18:04:56.226605] Load payload from ../brom-payload/build/payload.bin = 0x4550 bytes
+[2019-03-25 18:04:56.229187] Send payload
+[2019-03-25 18:04:56.731840] Let's rock
+[2019-03-25 18:04:56.732593] Wait for the payload to come online...
+[2019-03-25 18:04:57.215058] all good
+[2019-03-25 18:04:57.215538] Check GPT
+[2019-03-25 18:04:57.532890] gpt_parsed = {'KB': (2048, 2048), 'DKB': (4096, 2048), 'EXPDB': (6144, 35584), 'UBOOT': (41728, 2048), 'boot': (43776, 32768), 'recovery': (76544, 32768), 'MISC': (109312, 1024), 'LOGO': (110336, 7168), 'TEE1': (117504, 10240), 'TEE2': (127744, 10240), 'system': (137984, 1761280), 'cache': (1899264, 512000), 'userdata': (2411264, 12858591), '': (0, 1)}
+[2019-03-25 18:04:57.533173] Check boot0
+[2019-03-25 18:04:57.760106] Check rpmb
+[2019-03-25 18:04:57.968956] rpmb looks broken; if this is expected (i.e. you're retrying the exploit) press enter, otherwise terminate with Ctrl+C
+[2019-03-25 18:04:59.324533] Clear preloader header
+[2019-03-25 18:05:00.544727] Downgrade rpmb
+[2019-03-25 18:05:00.546786] Recheck rpmb
+[2019-03-25 18:05:01.621849] rpmb downgrade ok
+[2019-03-25 18:05:01.622204] Flash lk-payload
+[2019-03-25 18:05:02.564576] Flash tz
+[2019-03-25 18:05:55.005721] Flash lk
+[2019-03-25 18:06:11.575023] Inject microloader
+[2019-03-25 18:06:11.973436] Force fastboot
+[2019-03-25 18:06:12.265290] Flash preloader
+[2019-03-25 18:06:42.291701] Reboot to unlocked fastboot
+[2019-03-25 18:08:05.982993] Waiting for bootrom
+[2019-03-25 18:08:09.240106] Found port = /dev/ttyACM3
+[2019-03-25 18:08:09.240886] Handshake
+[2019-03-25 18:08:09.241702] Disable watchdog
+[2019-03-25 18:08:14.141292] Init crypto engine
+[2019-03-25 18:08:14.164843] Disable caches
+[2019-03-25 18:08:14.165243] Disable bootrom range checks
+[2019-03-25 18:08:14.176969] Load payload from ../brom-payload/build/payload.bin = 0x4550 bytes
+[2019-03-25 18:08:14.181558] Send payload
+[2019-03-25 18:08:14.686528] Let's rock
+[2019-03-25 18:08:14.687186] Wait for the payload to come online...
+[2019-03-25 18:08:15.169662] all good
+[2019-03-25 18:08:15.170172] Check GPT
+[2019-03-25 18:08:15.488280] gpt_parsed = {'KB': (2048, 2048), 'DKB': (4096, 2048), 'EXPDB': (6144, 35584), 'UBOOT': (41728, 2048), 'boot': (43776, 32768), 'recovery': (76544, 32768), 'MISC': (109312, 1024), 'LOGO': (110336, 7168), 'TEE1': (117504, 10240), 'TEE2': (127744, 10240), 'system': (137984, 1761280), 'cache': (1899264, 512000), 'userdata': (2411264, 12858591), '': (0, 1)}
+[2019-03-25 18:08:15.488566] Check boot0
+[2019-03-25 18:08:15.724847] Check rpmb
+[2019-03-25 18:08:15.934119] Clear preloader header
+[2019-03-25 18:08:17.157032] Downgrade rpmb
+[2019-03-25 18:08:17.158992] Recheck rpmb
+[2019-03-25 18:08:18.235994] rpmb downgrade ok
+[2019-03-25 18:08:18.236134] Flash lk-payload
+[2019-03-25 18:08:19.180417] Flash tz
+[2019-03-25 18:09:11.809919] Flash lk
+[2019-03-25 18:09:28.362419] Inject microloader
+[2019-03-25 18:09:28.801853] Force fastboot
+[2019-03-25 18:09:29.093462] Flash preloader
+[2019-03-25 18:09:59.141479] Reboot to unlocked fastboot
+[2019-03-25 18:14:46.555128] Waiting for bootrom
+[2019-03-25 18:14:52.222745] Found port = /dev/ttyACM3
+[2019-03-25 18:14:52.223558] Handshake
+[2019-03-25 18:14:52.224252] Disable watchdog
+[2019-03-25 18:14:53.674913] Init crypto engine
+[2019-03-25 18:14:53.694382] Disable caches
+[2019-03-25 18:14:53.694710] Disable bootrom range checks
+[2019-03-25 18:14:53.705893] Load payload from ../brom-payload/build/payload.bin = 0x4550 bytes
+[2019-03-25 18:14:53.709654] Send payload
+[2019-03-25 18:14:54.224807] Let's rock
+[2019-03-25 18:14:54.225443] Wait for the payload to come online...
+[2019-03-25 18:14:54.707758] all good
+[2019-03-25 18:14:54.707937] Check GPT
+[2019-03-25 18:14:55.024812] gpt_parsed = {'KB': (2048, 2048), 'DKB': (4096, 2048), 'EXPDB': (6144, 35584), 'UBOOT': (41728, 2048), 'boot': (43776, 32768), 'recovery': (76544, 32768), 'MISC': (109312, 1024), 'LOGO': (110336, 7168), 'TEE1': (117504, 10240), 'TEE2': (127744, 10240), 'system': (137984, 1761280), 'cache': (1899264, 512000), 'userdata': (2411264, 12858591), '': (0, 1)}
+[2019-03-25 18:14:55.025114] Check boot0
+[2019-03-25 18:14:55.252264] Check rpmb
+[2019-03-25 18:14:55.461339] Clear preloader header
+[2019-03-25 18:14:56.685953] Downgrade rpmb
+[2019-03-25 18:14:56.687918] Recheck rpmb
+[2019-03-25 18:14:57.766907] rpmb downgrade ok
+[2019-03-25 18:14:57.767235] Flash lk-payload
+[2019-03-25 18:14:58.711445] Flash tz
+[2019-03-25 18:15:51.606108] Flash lk
+[2019-03-25 18:16:08.167994] Inject microloader
+[2019-03-25 18:16:08.607556] Force fastboot
+[2019-03-25 18:16:08.899798] Reboot to unlocked fastboot
+[2019-03-25 18:23:35.357776] Waiting for bootrom
+[2019-03-25 18:23:38.344219] Found port = /dev/ttyACM3
+[2019-03-25 18:23:38.345076] Handshake
+[2019-03-25 18:23:38.345881] Disable watchdog
+[2019-03-25 18:23:39.420708] Init crypto engine
+[2019-03-25 18:23:39.442589] Disable caches
+[2019-03-25 18:23:39.442954] Disable bootrom range checks
+[2019-03-25 18:23:39.453476] Load payload from ../brom-payload/build/payload.bin = 0x4550 bytes
+[2019-03-25 18:23:39.456734] Send payload
+[2019-03-25 18:23:39.977787] Let's rock
+[2019-03-25 18:23:39.978363] Wait for the payload to come online...
+[2019-03-25 18:23:40.460731] all good
+[2019-03-25 18:23:40.460963] Check GPT
+[2019-03-25 18:23:40.776786] gpt_parsed = {'KB': (2048, 2048), 'DKB': (4096, 2048), 'EXPDB': (6144, 35584), 'UBOOT': (41728, 2048), 'boot': (43776, 32768), 'recovery': (76544, 32768), 'MISC': (109312, 1024), 'LOGO': (110336, 7168), 'TEE1': (117504, 10240), 'TEE2': (127744, 10240), 'system': (137984, 1761280), 'cache': (1899264, 512000), 'userdata': (2411264, 12858591), '': (0, 1)}
+[2019-03-25 18:23:40.777025] Check boot0
+[2019-03-25 18:23:41.012862] Check rpmb
+[2019-03-25 18:23:41.221916] rpmb looks broken; if this is expected (i.e. you're retrying the exploit) press enter, otherwise terminate with Ctrl+C
+[2019-03-25 18:23:45.056674] Clear preloader header
+[2019-03-25 18:23:46.280498] Downgrade rpmb
+[2019-03-25 18:23:46.282359] Recheck rpmb
+[2019-03-25 18:23:47.363262] rpmb downgrade ok
+[2019-03-25 18:23:47.363525] Flash lk-payload
+[2019-03-25 18:23:48.308951] Flash tz
+[2019-03-25 18:24:41.390262] Flash lk
+[2019-03-25 18:24:57.933557] Inject microloader
+[2019-03-25 18:24:58.374168] Force fastboot
+[2019-03-25 18:24:58.666615] Flash preloader
+[2019-03-25 18:25:28.720857] Reboot to unlocked fastboot
+[2019-03-25 18:27:00.466903] Waiting for bootrom
+[2019-03-25 18:27:03.453057] Found port = /dev/ttyACM3
+[2019-03-25 18:27:03.453512] Handshake
+[2019-03-25 18:27:03.454016] Disable watchdog
+[2019-03-25 18:27:05.154915] Init crypto engine
+[2019-03-25 18:27:05.174553] Disable caches
+[2019-03-25 18:27:05.174954] Disable bootrom range checks
+[2019-03-25 18:27:05.185269] Load payload from ../brom-payload/build/payload.bin = 0x4550 bytes
+[2019-03-25 18:27:05.187287] Send payload
+[2019-03-25 18:27:05.675899] Let's rock
+[2019-03-25 18:27:05.676515] Wait for the payload to come online...
+[2019-03-25 18:27:06.159067] all good
+[2019-03-25 18:27:06.159501] Check GPT
+[2019-03-25 18:27:06.477133] gpt_parsed = {'KB': (2048, 2048), 'DKB': (4096, 2048), 'EXPDB': (6144, 35584), 'UBOOT': (41728, 2048), 'boot': (43776, 32768), 'recovery': (76544, 32768), 'MISC': (109312, 1024), 'LOGO': (110336, 7168), 'TEE1': (117504, 10240), 'TEE2': (127744, 10240), 'system': (137984, 1761280), 'cache': (1899264, 512000), 'userdata': (2411264, 12858591), '': (0, 1)}
+[2019-03-25 18:27:06.477374] Check boot0
+[2019-03-25 18:27:06.704447] Check rpmb
+[2019-03-25 18:27:06.913650] Clear preloader header
+[2019-03-25 18:27:08.134799] Downgrade rpmb
+[2019-03-25 18:27:08.136628] Recheck rpmb
+[2019-03-25 18:27:09.218952] rpmb downgrade ok
+[2019-03-25 18:27:09.219327] Flash lk-payload
+[2019-03-25 18:27:10.164435] Flash tz
+[2019-03-25 18:28:02.673667] Flash lk
+[2019-03-25 18:28:19.231917] Inject microloader
+[2019-03-25 18:28:19.673726] Force fastboot
+[2019-03-25 18:28:19.965513] Reboot to unlocked fastboot
+[2019-03-25 18:31:10.421051] Waiting for bootrom
+[2019-03-25 18:31:13.409774] Found port = /dev/ttyACM3
+[2019-03-25 18:31:13.410465] Handshake
+[2019-03-25 18:31:13.411799] Disable watchdog
+[2019-03-25 18:31:14.207261] Init crypto engine
+[2019-03-25 18:31:14.228314] Disable caches
+[2019-03-25 18:31:14.228690] Disable bootrom range checks
+[2019-03-25 18:31:14.239198] Load payload from ../brom-payload/build/payload.bin = 0x4550 bytes
+[2019-03-25 18:31:14.241738] Send payload
+[2019-03-25 18:31:14.749583] Let's rock
+[2019-03-25 18:31:14.750430] Wait for the payload to come online...
+[2019-03-25 18:31:15.232862] all good
+[2019-03-25 18:31:15.233342] Check GPT
+[2019-03-25 18:31:15.550307] gpt_parsed = {'KB': (2048, 2048), 'DKB': (4096, 2048), 'EXPDB': (6144, 35584), 'UBOOT': (41728, 2048), 'boot': (43776, 32768), 'recovery': (76544, 32768), 'MISC': (109312, 1024), 'LOGO': (110336, 7168), 'TEE1': (117504, 10240), 'TEE2': (127744, 10240), 'system': (137984, 1761280), 'cache': (1899264, 512000), 'userdata': (2411264, 12858591), '': (0, 1)}
+[2019-03-25 18:31:15.550590] Check boot0
+[2019-03-25 18:31:15.786502] Check rpmb
+[2019-03-25 18:31:15.995732] rpmb looks broken; if this is expected (i.e. you're retrying the exploit) press enter, otherwise terminate with Ctrl+C
+[2019-03-25 18:31:17.478250] Clear preloader header
+[2019-03-25 18:31:18.700994] Downgrade rpmb
+[2019-03-25 18:31:18.702921] Recheck rpmb
+[2019-03-25 18:31:19.786022] rpmb downgrade ok
+[2019-03-25 18:31:19.786314] Flash lk-payload
+[2019-03-25 18:31:20.730880] Flash tz
+[2019-03-25 18:32:13.392468] Flash lk
+[2019-03-25 18:32:29.966885] Inject microloader
+[2019-03-25 18:32:30.408878] Force fastboot
+[2019-03-25 18:32:30.700694] Flash preloader
+[2019-03-25 18:33:00.747195] Reboot to unlocked fastboot
+[2019-03-25 18:35:01.154090] Waiting for bootrom
+[2019-03-25 18:35:04.946994] Found port = /dev/ttyACM3
+[2019-03-25 18:35:04.947469] Handshake
+[2019-03-25 18:35:04.947921] Disable watchdog
+[2019-03-25 18:35:08.253942] Init crypto engine
+[2019-03-25 18:35:08.274318] Disable caches
+[2019-03-25 18:35:08.274737] Disable bootrom range checks
+[2019-03-25 18:35:08.285820] Load payload from ../brom-payload/build/payload.bin = 0x4550 bytes
+[2019-03-25 18:35:08.287934] Send payload
+[2019-03-25 18:35:08.785622] Let's rock
+[2019-03-25 18:35:08.786368] Wait for the payload to come online...
+[2019-03-25 18:35:09.268805] all good
+[2019-03-25 18:35:09.269245] Check GPT
+[2019-03-25 18:35:09.586979] gpt_parsed = {'KB': (2048, 2048), 'DKB': (4096, 2048), 'EXPDB': (6144, 35584), 'UBOOT': (41728, 2048), 'boot': (43776, 32768), 'recovery': (76544, 32768), 'MISC': (109312, 1024), 'LOGO': (110336, 7168), 'TEE1': (117504, 10240), 'TEE2': (127744, 10240), 'system': (137984, 1761280), 'cache': (1899264, 512000), 'userdata': (2411264, 12858591), '': (0, 1)}
+[2019-03-25 18:35:09.587224] Check boot0
+[2019-03-25 18:35:09.814358] Check rpmb
+[2019-03-25 18:35:10.023465] Clear preloader header
+[2019-03-25 18:35:11.246760] Downgrade rpmb
+[2019-03-25 18:35:11.248710] Recheck rpmb
+[2019-03-25 18:35:12.333807] rpmb downgrade ok
+[2019-03-25 18:35:12.334002] Flash lk-payload
+[2019-03-25 18:35:13.278945] Flash tz
+[2019-03-25 18:36:06.145729] Flash lk
+[2019-03-25 18:36:22.710931] Inject microloader
+[2019-03-25 18:36:23.108589] Force fastboot
+[2019-03-25 18:36:23.401585] Flash preloader
+[2019-03-25 18:36:53.446935] Reboot to unlocked fastboot
+[2019-03-25 18:38:28.197688] Waiting for preloader
+[2019-03-25 18:38:33.351687] Found port = /dev/ttyACM3
+[2019-03-25 18:38:33.374105] Handshake
+[2019-03-25 18:38:33.394250] Preloader ready, sending FACTORYM
+[2019-03-25 18:38:56.345090] Waiting for preloader
+[2019-03-25 18:38:59.351617] Found port = /dev/ttyACM3
+[2019-03-25 18:38:59.375617] Handshake
+[2019-03-25 18:38:59.395748] Preloader ready, sending FACTORYM
+[2019-03-25 18:39:18.560148] Waiting for preloader
+[2019-03-25 18:39:22.391473] Found port = /dev/ttyACM3
+[2019-03-25 18:39:22.414804] Handshake
+[2019-03-25 18:39:22.435023] Preloader ready, sending FACTFACT
+[2019-03-25 18:48:25.339231] Waiting for bootrom
+[2019-03-25 18:48:28.595952] Found port = /dev/ttyACM3
+[2019-03-25 18:48:28.596781] Handshake
+[2019-03-25 18:48:28.597571] Disable watchdog
+[2019-03-25 18:48:29.785462] Init crypto engine
+[2019-03-25 18:48:29.804806] Disable caches
+[2019-03-25 18:48:29.805140] Disable bootrom range checks
+[2019-03-25 18:48:29.815720] Load payload from ../brom-payload/build/payload.bin = 0x4550 bytes
+[2019-03-25 18:48:29.818903] Send payload
+[2019-03-25 18:48:30.322354] Let's rock
+[2019-03-25 18:48:30.323131] Wait for the payload to come online...
+[2019-03-25 18:48:30.805586] all good
+[2019-03-25 18:48:30.806115] Check GPT
+[2019-03-25 18:48:31.121717] gpt_parsed = {'KB': (2048, 2048), 'DKB': (4096, 2048), 'EXPDB': (6144, 35584), 'UBOOT': (41728, 2048), 'boot': (43776, 32768), 'recovery': (76544, 32768), 'MISC': (109312, 1024), 'LOGO': (110336, 7168), 'TEE1': (117504, 10240), 'TEE2': (127744, 10240), 'system': (137984, 1761280), 'cache': (1899264, 512000), 'userdata': (2411264, 12858591), '': (0, 1)}
+[2019-03-25 18:48:31.121823] Check boot0
+[2019-03-25 18:48:31.348470] Check rpmb
+[2019-03-25 18:48:31.557581] Clear preloader header
+[2019-03-25 18:48:32.780137] Downgrade rpmb
+[2019-03-25 18:48:32.782002] Recheck rpmb
+[2019-03-25 18:48:33.869535] rpmb downgrade ok
+[2019-03-25 18:48:33.869884] Flash lk-payload
+[2019-03-25 18:48:34.814866] Flash tz
+[2019-03-25 18:49:29.945423] Waiting for bootrom
+[2019-03-25 18:49:32.667021] Found port = /dev/ttyACM3
+[2019-03-25 18:49:32.667611] Handshake
+[2019-03-25 18:49:32.668286] Disable watchdog
+[2019-03-25 18:49:33.510153] Init crypto engine
+[2019-03-25 18:49:33.529994] Disable caches
+[2019-03-25 18:49:33.530733] Disable bootrom range checks
+[2019-03-25 18:49:33.541431] Load payload from ../brom-payload/build/payload.bin = 0x4550 bytes
+[2019-03-25 18:49:33.544782] Send payload
+[2019-03-25 18:49:34.039191] Let's rock
+[2019-03-25 18:49:34.039863] Wait for the payload to come online...
+[2019-03-25 18:49:34.522306] all good
+[2019-03-25 18:49:34.522731] Check GPT
+[2019-03-25 18:49:34.839312] gpt_parsed = {'KB': (2048, 2048), 'DKB': (4096, 2048), 'EXPDB': (6144, 35584), 'UBOOT': (41728, 2048), 'boot': (43776, 32768), 'recovery': (76544, 32768), 'MISC': (109312, 1024), 'LOGO': (110336, 7168), 'TEE1': (117504, 10240), 'TEE2': (127744, 10240), 'system': (137984, 1761280), 'cache': (1899264, 512000), 'userdata': (2411264, 12858591), '': (0, 1)}
+[2019-03-25 18:49:34.839521] Check boot0
+[2019-03-25 18:49:35.066449] Check rpmb
+[2019-03-25 18:49:35.275546] rpmb looks broken; if this is expected (i.e. you're retrying the exploit) press enter, otherwise terminate with Ctrl+C
+[2019-03-25 18:49:35.904568] Clear preloader header
+[2019-03-25 18:49:37.125974] Downgrade rpmb
+[2019-03-25 18:49:37.128050] Recheck rpmb
+[2019-03-25 18:49:38.215531] rpmb downgrade ok
+[2019-03-25 18:49:38.215843] Flash lk-payload
+[2019-03-25 18:49:39.161693] Flash tz
+[2019-03-25 18:50:31.621837] Flash lk
+[2019-03-25 18:50:48.172068] Inject microloader
+[2019-03-25 18:50:48.529348] Force fastboot
+[2019-03-25 18:50:48.821077] Flash preloader
+[2019-03-25 18:51:18.879612] Reboot to unlocked fastboot
+[2019-03-25 18:52:17.906913] Waiting for preloader
+[2019-03-25 18:52:23.064614] Found port = /dev/ttyACM3
+[2019-03-25 18:52:23.086014] Handshake
+[2019-03-25 18:52:23.106173] Preloader ready, sending FACTORYM
+[2019-03-25 19:03:59.087754] Waiting for bootrom
+[2019-03-25 19:04:02.611080] Found port = /dev/ttyACM3
+[2019-03-25 19:04:02.611701] Handshake
+[2019-03-25 19:04:02.612218] Disable watchdog
+[2019-03-25 19:04:03.559761] Init crypto engine
+[2019-03-25 19:04:03.582047] Disable caches
+[2019-03-25 19:04:03.582471] Disable bootrom range checks
+[2019-03-25 19:04:03.594228] Load payload from ../brom-payload/build/payload.bin = 0x4550 bytes
+[2019-03-25 19:04:03.598675] Send payload
+[2019-03-25 19:04:04.099046] Let's rock
+[2019-03-25 19:04:04.099760] Wait for the payload to come online...
+[2019-03-25 19:04:04.582129] all good
+[2019-03-25 19:04:04.582397] Check GPT
+[2019-03-25 19:04:04.900256] gpt_parsed = {'KB': (2048, 2048), 'DKB': (4096, 2048), 'EXPDB': (6144, 35584), 'UBOOT': (41728, 2048), 'boot': (43776, 32768), 'recovery': (76544, 32768), 'MISC': (109312, 1024), 'LOGO': (110336, 7168), 'TEE1': (117504, 10240), 'TEE2': (127744, 10240), 'system': (137984, 1761280), 'cache': (1899264, 512000), 'userdata': (2411264, 12858591), '': (0, 1)}
+[2019-03-25 19:04:04.900499] Check boot0
+[2019-03-25 19:04:05.127581] Check rpmb
+[2019-03-25 19:04:05.336545] Clear preloader header
+[2019-03-25 19:04:06.558932] Downgrade rpmb
+[2019-03-25 19:04:06.560919] Recheck rpmb
+[2019-03-25 19:04:07.650956] rpmb downgrade ok
+[2019-03-25 19:04:07.651316] Flash lk-payload
+[2019-03-25 19:04:08.456052] Flash tz
+[2019-03-25 19:05:14.620051] Waiting for bootrom
+[2019-03-25 19:05:17.610075] Found port = /dev/ttyACM3
+[2019-03-25 19:05:17.610985] Handshake
+[2019-03-25 19:05:17.611837] Disable watchdog
+[2019-03-25 19:05:19.070204] Init crypto engine
+[2019-03-25 19:05:19.094230] Disable caches
+[2019-03-25 19:05:19.094698] Disable bootrom range checks
+[2019-03-25 19:05:19.106314] Load payload from ../brom-payload/build/payload.bin = 0x4550 bytes
+[2019-03-25 19:05:19.110220] Send payload
+[2019-03-25 19:05:19.636258] Let's rock
+[2019-03-25 19:05:19.636964] Wait for the payload to come online...
+[2019-03-25 19:05:20.119409] all good
+[2019-03-25 19:05:20.119826] Check GPT
+[2019-03-25 19:05:20.437113] gpt_parsed = {'KB': (2048, 2048), 'DKB': (4096, 2048), 'EXPDB': (6144, 35584), 'UBOOT': (41728, 2048), 'boot': (43776, 32768), 'recovery': (76544, 32768), 'MISC': (109312, 1024), 'LOGO': (110336, 7168), 'TEE1': (117504, 10240), 'TEE2': (127744, 10240), 'system': (137984, 1761280), 'cache': (1899264, 512000), 'userdata': (2411264, 12858591), '': (0, 1)}
+[2019-03-25 19:05:20.437396] Check boot0
+[2019-03-25 19:05:20.664258] Check rpmb
+[2019-03-25 19:05:20.873006] rpmb looks broken; if this is expected (i.e. you're retrying the exploit) press enter, otherwise terminate with Ctrl+C
+[2019-03-25 19:05:22.142370] Clear preloader header
+[2019-03-25 19:05:23.365029] Downgrade rpmb
+[2019-03-25 19:05:23.367012] Recheck rpmb
+[2019-03-25 19:05:24.458410] rpmb downgrade ok
+[2019-03-25 19:05:24.458719] Flash lk-payload
+[2019-03-25 19:05:25.263102] Flash tz
+[2019-03-25 19:06:17.716423] Flash lk
+[2019-03-25 19:06:34.239505] Inject microloader
+[2019-03-25 19:06:34.597014] Force fastboot
+[2019-03-25 19:06:34.888974] Flash preloader
+[2019-03-25 19:07:04.937392] Reboot to unlocked fastboot
+[2019-03-25 19:07:48.692755] Waiting for preloader
+[2019-03-25 19:07:52.520255] Found port = /dev/ttyACM3
+[2019-03-25 19:07:52.543647] Handshake
+[2019-03-25 19:07:52.563757] Preloader ready, sending FACTORYM
