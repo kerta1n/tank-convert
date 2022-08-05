@@ -1,5 +1,5 @@
 # tank-convert
-Repo with everything you need (- the Lineage) to convert a 2nd gen Amazon Fire Stick to Lineage 12 (Android 5.1)  
+Repo with everything you need (- the Lineage) to convert a 2nd gen Amazon Fire Stick to Lineage 12/Android 5.1 (clean Android TV!)
 
 Currently, Android 5.1 is the only newest version available for this HW, but I did some digging and found a device tree for Android 7: https://github.com/cmtank/device_amazon_tank/tree/cm-14.1. If you happen to know how to build LOS with different trees and actually do, please open an issue and I will link it.  
 
@@ -21,7 +21,7 @@ The OpenGAPPS build for this specific HW is for some reason not available, so I 
 
 I do not advise transferring APKs into storage while in TWRP, as you cannot delete them once in LOS because they belong to root  
 
-The APKs that worked for me are in APK directory (Prime Video from the Play Store did not work on some of the sticks I installed LOS on)  
+The APKs that worked for me are in APK directory. Prime Video from the Play Store did not work on some of the sticks I installed LOS on, and Disney+ and Netflix are not on the Play Store (Google looks at the device config and decides what apps will work with it). There are 2 Disney+ APK, `dplusoff.apk` was pulled from FireOS, but the regular `dplus.apk` may not play videos. If you find that you need to use the official APK, the only caveat is that it will try to connect to the Amazon Appstore and bring up an annoying dialog. Otherwise it should work fine.  
 
 Your remote will need to have a Power button, otherwise the gen1 remote will not show up while trying to pair, but you can use a USB-OTG hub (KB and mouse) And no, sadly you cannot ADB shell into it first boot as you need some way to accept the pairing request.  
 
