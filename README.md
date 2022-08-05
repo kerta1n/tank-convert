@@ -40,4 +40,4 @@ In order to exit adding custom buttons, you may notice the back button does not 
 
 If you map one of your buttons to the power menu to access bootloader, you will first need to enable this advanced reboot. Open the settings app from inside the app drawer, open developer options, and enable "Advanced reboot". Once you open the power menu, click reboot and it will give you a selection.  
 
-Have fun!
+Thank you to the developers for making this possible! k4y0z, xyz, diegocr, Rortiz2
