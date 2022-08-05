@@ -25,7 +25,7 @@ Your remote will need to have a Power button, otherwise the gen1 remote will not
 
 ADB shell over the network is enabled by default. The best way to install apps is using the adb install command, and I have included a few shell scripts as well.  
 
-There are two ways of accessing settings, one is on the ATV home screen, the other is the settings app (what looks like a real tablet settings app) in the App Drawer.  
+There are two ways of accessing settings, one is on the ATV home screen, the other is the settings app (what looks like a real tablet settings app) in the App Drawer.   
 The Power button on your remote is not remappable (it only toggles the device sleep mode), and the Alexa button does not activate the Google Assistant. I have included the Google APK which should enable the Assistant.  
 
 To remap buttons, open the Play Store and search for "button remap". There should be two results. Install the second result. Some features are pro, and you may notice that you can't change the menu button functions. You can override this by using the "add buttons" option, clicking on the blue +, and pressing the key of which you want to map  
