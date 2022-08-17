@@ -3,7 +3,7 @@ Repo with everything you need (- the Lineage) to convert a 2nd gen Amazon Fire S
 
 Currently, Android 5.1 is the only newest version available for this HW, but I did some digging and found a device tree for Android 7: https://github.com/cmtank/device_amazon_tank/tree/cm-14.1. If you happen to know how to build LOS with different trees and actually do, please open an issue and I will link it.  
 
-Tools you need are a butter knife and a small conductive piece of wire (I used a twist tie and it worked fine). The shortpoint is in "Installing TWRP, for ground, I hooked the twist tie into the heatsink that is soldered to the PCB.  
+Tools you need are a butter knife and a small conductive piece of wire (I used a twist tie and it worked fine). The shortpoint is in "Installing TWRP", for ground, I hooked the twist tie into the heatsink that is soldered to the PCB.  
 
 The only thing you need to download from outside this repo is the Lineage OS zip file (Git storage limits). Use this: https://androidfilehost.com/?fid=8889791610682947296  
 
