@@ -15,9 +15,9 @@ If you run into "downgrade failure", comment out the if loop, lines 114-116 unde
 
 If you run into not being able to reboot into Fastboot, follow these instructions (use the preincluded gpt folder): https://forum.xda-developers.com/t/unlock-root-twrp-unbrick-fire-tv-stick-2nd-gen-tank.3907002/post-79056952  
 
-If you have run the gpt fix multiple times and are sure your short was placed correctly, try re-trying the exploit without the gpt fix (re-clone repo and try again basically)  
+If you have run the gpt fix multiple times and are sure your short was placed correctly, try re-trying the exploit without the gpt fix (re-clone this repo and try again basically)  
 
-If after you start Android and your `Optimizing apps` takes too long, you flashed more apps besides GAPPS (Magisk), or you need to get back into TWRP, run the `amonet/boot-fastboot.sh` script as sudo, and AFTER you run it plug the device into your Linux machine.  
+If after you start Android and your `Optimizing apps` takes too long, you flashed more apps besides GAPPS (Magisk), or you need to get back into TWRP, run the `amonet/boot-recovery.sh` script as sudo, and AFTER you run it plug the device into your Linux machine.  
 
 The OpenGAPPS build for this specific HW is for some reason not available, so I have included it with the repo (no need to download this, but source: https://androidfilehost.com/?fid=8889791610682906163)  
 
