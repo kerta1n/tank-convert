@@ -23,7 +23,7 @@ The OpenGAPPS build for this specific HW is for some reason not available on the
 
 I do not advise transferring APKs into storage while in TWRP, as you cannot delete them once in LOS because they belong to root  
 
-In order to control your fire stick your remote will need to have a Power button, otherwise the gen1 remote will not show up while trying to pair, but you can use a USB-OTG hub (KB and mouse). This is due to the older remotes using WiFi Direct, newer ones use Bluetooth. And no, sadly you cannot ADB shell into it first boot as you need some way to accept the pairing request.  
+In order to control your fire stick your remote will need to have a Power button, otherwise the gen1 remote will not show up while trying to pair, but you can use a USB-OTG hub (KB and mouse). This is due to the older remotes using WiFi Direct, newer ones use Bluetooth. And no, sadly you cannot ADB shell into it first boot as you need some way to accept the pairing request.  HOWEVER, if you have HDMI-CEC enabled on your TV, this should work with your TV's included remote. Test by using the arrow keys or check your TV's user manual. Alternatively: https://en.m.wikipedia.org/wiki/Consumer_Electronics_Control
 
 ADB shell over the network is enabled by default. The best way to install apps is using the adb install command, and I have included a few shell scripts as well.  
 
