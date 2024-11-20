@@ -13,7 +13,7 @@ Installing LOS: https://forum.xda-developers.com/t/rom-unlocked-tank-lineageos-1
 
 If you run into "downgrade failure", comment out the if loop, lines 114-116 under amonet/modules/main.py and try again.  
 
-If you run into not being able to reboot into Fastboot, follow these instructions (use the preincluded gpt folder): https://forum.xda-developers.com/t/unlock-root-twrp-unbrick-fire-tv-stick-2nd-gen-tank.3907002/post-79056952  
+If you run into not being able to reboot into Fastboot, follow these instructions (use the preincluded gpt folder) https://forum.xda-developers.com/t/unlock-root-twrp-unbrick-fire-tv-stick-2nd-gen-tank.3907002/post-79056952  
 
 If you have run the gpt fix multiple times and are sure your short was placed correctly, try re-trying the exploit without the gpt fix (re-clone this repo and try again basically)  
 
@@ -40,6 +40,6 @@ In order to exit adding custom buttons, you may notice the back button does not 
 
 If you map one of your buttons to the power menu to access bootloader, you will first need to enable the advanced reboot menu. Open the settings app from inside the app drawer, open developer options, and enable "Advanced reboot". Once you open the power menu, click reboot and it will give you a selection.  
 
-[This repository]([url](https://github.com/esc0rtd3w/firestick-loader)) contains a LOT more APKs if you're looking for that. However, you will still need to follow this guide to first get your Firestick onto LOS. 
+[https://github.com/esc0rtd3w/firestick-loader](This repository) contains a LOT more APKs if you're looking for that. However, you will still need to follow this guide to first get your Firestick onto LOS. 
 
-Thank you to the developers for making this possible! [k4y0z]([url](https://github.com/k4y0z)), xyz, [diegocr]([url](https://github.com/diegocr)), [Rortiz2]([url](https://github.com/R0rt1z2/))
+Thank you to the developers for making this possible! [https://github.com/k4y0z](k4y0z), xyz, [https://github.com/diegocr](diegocr), [https://github.com/R0rt1z2](R0rt1z2)
