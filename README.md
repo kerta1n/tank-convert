@@ -42,4 +42,4 @@ If you map one of your buttons to the power menu to access bootloader, you will 
 
 [https://github.com/esc0rtd3w/firestick-loader](This repository) contains a LOT more APKs if you're looking for that. However, you will still need to follow this guide to first get your Firestick onto LOS. 
 
-Thank you to the developers for making this possible! [https://github.com/k4y0z](k4y0z), xyz, [https://github.com/diegocr](diegocr), [https://github.com/R0rt1z2](R0rt1z2)
+Thank you to the developers for making this possible! [k4y0z](https://github.com/k4y0z), xyz, [diegocr](https://github.com/diegocr), [R0rt1z2](https://github.com/R0rt1z2)
