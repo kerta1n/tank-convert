@@ -21,7 +21,7 @@ If after you start Android and your `Optimizing apps` takes too long, you want t
 
 The OpenGAPPS build for this specific HW is for some reason not available on the website, so I've linked it here: https://androidfilehost.com/?fid=8889791610682906163  
 
-I do not advise transferring APKs into storage while in TWRP, as you cannot delete them once in LOS because they belong to root  
+I do not advise transferring APKs into storage while in TWRP, as you cannot delete them once in LOS because they belong to root (unless you end up rooting the stick)
 
 In order to control your fire stick your remote will need to have a Power button, otherwise the gen1 remote will not show up while trying to pair, but you can use a USB-OTG hub (KB and mouse). This is due to the older remotes using WiFi Direct, newer ones use Bluetooth. And no, sadly you cannot ADB shell into it first boot as you need some way to accept the pairing request.  HOWEVER, if you have HDMI-CEC enabled on your TV, this should work with your TV's included remote. Test by using the arrow keys or check your TV's user manual. Alternatively: https://en.m.wikipedia.org/wiki/Consumer_Electronics_Control
 
@@ -38,6 +38,8 @@ To remap buttons, open the Play Store and search for "button remap". There shoul
 
 In order to exit adding custom buttons, you may notice the back button does not work. You will need to shell into the device. Once you have a shell open, you can use `input keyevent 4` as back button, `input keyevent 22` as DPAD right, and `input keyevent 23` as enter.  
 
-If you map one of your buttons to the power menu to access bootloader, you will first need to enable this advanced reboot. Open the settings app from inside the app drawer, open developer options, and enable "Advanced reboot". Once you open the power menu, click reboot and it will give you a selection.  
+If you map one of your buttons to the power menu to access bootloader, you will first need to enable the advanced reboot menu. Open the settings app from inside the app drawer, open developer options, and enable "Advanced reboot". Once you open the power menu, click reboot and it will give you a selection.  
 
-Thank you to the developers for making this possible! k4y0z, xyz, diegocr, Rortiz2
+[This repositohttps://github.com/esc0rtd3w/firestick-loaderry](url) contains a LOT more APKs if you're looking for that. However, you will still need to follow this guide to first get your Firestick onto LOS. 
+
+Thank you to the developers for making this possible! [k4y0z]([url](https://github.com/k4y0z)), xyz, [diegocr]([url](https://github.com/diegocr)), [Rortiz2]([url](https://github.com/R0rt1z2/))
