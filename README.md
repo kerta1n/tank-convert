@@ -58,6 +58,6 @@ In order to exit adding custom buttons, you may notice the back button does not 
 
 If you map one of your buttons to the power menu to access bootloader, you will first need to enable the advanced reboot menu. Open the settings app from inside the app drawer, open developer options, and enable "Advanced reboot". Once you open the power menu, click reboot and it will give you a selection.  
 
-[https://github.com/esc0rtd3w/firestick-loader](This repository) contains a LOT more APKs if you're looking for that. However, you will still need to follow this guide to first get your Firestick onto LOS. 
+[This repository](https://github.com/esc0rtd3w/firestick-loader) contains a LOT more APKs if you're looking for that. However, you will still need to follow this guide to first get your Firestick onto LOS. 
 
 Thank you to the developers for making this possible! [k4y0z](https://github.com/k4y0z), xyz, [diegocr](https://github.com/diegocr), [R0rt1z2](https://github.com/R0rt1z2)
