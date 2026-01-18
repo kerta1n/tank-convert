@@ -1,63 +1,137 @@
 # tank-convert
-Repo with everything you need (- the Lineage) to convert a 2nd gen Amazon Fire Stick to Lineage 12/Android 5.1 (clean Android TV!)
 
-Currently, Android 5.1 is the only newest version available for this HW, but I did some digging and found a device tree for Android 7: https://github.com/cmtank/device_amazon_tank/tree/cm-14.1. If you happen to know how to build LOS with different trees and actually do, please open an issue and I will link it.  
+Convert your 2nd gen Amazon Fire Stick to Lineage 12/Android 5.1 (clean Android TV!)
 
-Tools you need are a butter knife and a small conductive piece of wire (I used a twist tie and it worked fine). The shortpoint is in "Installing TWRP", for ground, I hooked the twist tie into the heatsink that is soldered to the PCB.  
+## Overview
 
-The only thing you need to download from outside this repo is the Lineage OS zip file (Git storage limits). Use this: https://androidfilehost.com/?fid=8889791610682947296  
+This repository contains everything you need (minus the Lineage OS zip) to convert a 2nd gen Amazon Fire Stick to Lineage 12/Android 5.1. Currently, Android 5.1 is the only newest version available for this hardware, but there's a device tree for Android 7 available [here](https://github.com/cmtank/device_amazon_tank/tree/cm-14.1). If you know how to build LOS with different trees and actually do, please open an issue and I will link it.
 
-Installing TWRP: https://forum.xda-developers.com/t/unlock-root-twrp-unbrick-fire-tv-stick-2nd-gen-tank.3907002/  
+## What You'll Need
 
-Installing LOS: https://forum.xda-developers.com/t/rom-unlocked-tank-lineageos-12-1.3961110/  
+### Hardware
+- Butter knife
+- Small conductive piece of wire (a twist tie works fine)
+- USB-OTG hub with keyboard and mouse (for initial setup)
+- A remote with a Power button (or HDMI-CEC enabled TV)
 
-If you run into "downgrade failure", comment out the if loop, lines 114-116 under amonet/modules/main.py and try again.  
+### Downloads
+- **Lineage OS zip**: https://androidfilehost.com/?fid=8889791610682947296
+- **OpenGAPPS** (specific build for this hardware): https://androidfilehost.com/?fid=8889791610682906163
 
-If you run into not being able to reboot into Fastboot, follow these instructions (use the preincluded gpt folder) https://forum.xda-developers.com/t/unlock-root-twrp-unbrick-fire-tv-stick-2nd-gen-tank.3907002/post-79056952  
+## Installation Instructions
 
-If you have run the gpt fix multiple times and are sure your short was placed correctly, try re-trying the exploit without the gpt fix (re-clone this repo and try again basically)  
+### Step 1: Installing TWRP
 
-If after you start Android and your `Optimizing apps` takes too long, you want to flash more apps besides GAPPS (Magisk), or you need to get back into TWRP, run the `amonet/boot-recovery.sh` script as sudo, and AFTER you run it plug the device into your Linux machine.  
+Follow the guide here: https://forum.xda-developers.com/t/unlock-root-twrp-unbrick-fire-tv-stick-2nd-gen-tank.3907002/
 
-The OpenGAPPS build for this specific HW is for some reason not available on the website, so I've linked it here: https://androidfilehost.com/?fid=8889791610682906163  
+**Hardware Setup:**
+- The shortpoint is detailed in the TWRP installation guide
+- For ground, hook the twist tie into the heatsink that is soldered to the PCB
 
-I do not advise transferring APKs into storage while in TWRP, as you cannot delete them once in LOS because they belong to root (unless you end up rooting the stick)
+### Step 2: Installing Lineage OS
 
-In order to control your fire stick your remote will need to have a Power button, otherwise the gen1 remote will not show up while trying to pair, but you can use a USB-OTG hub (KB and mouse). This is due to the older remotes using WiFi Direct, newer ones use Bluetooth. And no, sadly you cannot ADB shell into it first boot as you need some way to accept the pairing request.  HOWEVER, if you have HDMI-CEC enabled on your TV, this should work with your TV's included remote. Test by using the arrow keys or check your TV's user manual. 
+Follow the guide here: https://forum.xda-developers.com/t/rom-unlocked-tank-lineageos-12-1.3961110/
 
-HOWEVER: ADB over USB can be used if you first go into TWRP and copy over your devices ADB RSA key.
-If you are using any Unix/GNU system;
+## Troubleshooting
+
+### "Downgrade failure" error
+Comment out the if loop, lines 114-116 under `amonet/modules/main.py` and try again.
+
+### Cannot reboot into Fastboot
+Follow these instructions using the preincluded gpt folder: https://forum.xda-developers.com/t/unlock-root-twrp-unbrick-fire-tv-stick-2nd-gen-tank.3907002/post-79056952
+
+If you have run the gpt fix multiple times and are sure your short was placed correctly, try re-trying the exploit without the gpt fix (re-clone this repo and try again basically).
+
+### "Optimizing apps" takes too long
+Run the `amonet/boot-recovery.sh` script as sudo, and **AFTER** you run it plug the device into your Linux machine. This also applies if you want to flash more apps besides GAPPS (Magisk) or need to get back into TWRP.
+
+## Post-Installation Setup
+
+### Remote Control Options
+
+**⚠️ Important:** In order to control your Fire Stick, your remote will need to have a Power button, otherwise the gen1 remote will not show up while trying to pair. This is due to older remotes using WiFi Direct, while newer ones use Bluetooth.
+
+**Alternative control methods:**
+- USB-OTG hub with keyboard and mouse
+- HDMI-CEC enabled TV (test by using the arrow keys or check your TV's user manual)
+
+### ADB Access
+
+**ADB over Network:** Enabled by default, but you still need be able to first accept the pairing request. Once done, the best way to install apps is using the `adb install` command. Shell scripts are included in this repo under the `apk/` directory (`install.sh` and `remove.sh`).
+
+**ADB over USB:** Can be used if you first go into TWRP and copy over your device's ADB RSA key.
+
+For Unix/GNU systems:
+```bash
+# 1. Reboot your phone into recovery mode
+# 2. Connect it to your computer
+# 3. Open the terminal and type:
+
+cd ~/.android
+adb push adbkey.pub /data/misc/adb/adb_keys
+
+# All done! Just adb shell reboot and feel the power!
 ```
-1. Reboot your phone into recovery mode.
 
-2. Connect it to your computer.
+*For Windows 10, the .android directory is located in the base of your `C:\User\user_name` directory.*
 
-3. Open the terminal and type:
+Thanks to issue #3.
 
- cd ~/.android
- adb push adbkey.pub /data/misc/adb/adb_keys
+### Accessing Settings
 
-All done! Just adb shell reboot and feel the power!
+There are two ways of accessing settings:
+1. Settings on the Android TV home screen
+2. The settings app (tablet-style settings) in the App Drawer
 
-*For Windows 10, .android directory is located in your the base of your C:\User\user_name directory.
-```
-Thanks to [issue #3](https://github.com/kerta1n/tank-convert/issues/3).
+## Included APKs
 
-ADB shell over the network is enabled by default. The best way to install apps is using the adb install command, and I have included a few shell scripts as well.  
+The APKs that worked for me are in the APK directory.
 
-There are two ways of accessing settings, one is on the ATV home screen, the other is the settings app (what looks like a real tablet settings app) in the App Drawer.   
-The Power button on your remote is not remappable (it only toggles the device sleep mode), and the Alexa button does not activate the Google Assistant. I have included the Google APK which should enable the Assistant.  
+### Known App Issues
 
-The APKs that worked for me are in APK directory. Prime Video from the Play Store did not work on some of the sticks I installed LOS on, and Disney+ and Netflix are not on the Play Store (Google looks at the device config and decides what apps will work with it). There are 2 Disney+ APK, `dplusoff.apk` was pulled from FireOS, but the regular `dplus.apk` may not play videos, but it's really a hit or miss. If you find that you need to use the official APK, the only caveat is that it will try to connect to the Amazon Appstore and bring up an annoying dialog. Otherwise it should work fine.  
+- **Prime Video:** The Play Store version did not work on some sticks
+- **Disney+ and Netflix:** Not available on the Play Store (Google restricts apps based on device config)
+- **Disney+:** Two versions included:
+  - `dplusoff.apk` - Pulled from FireOS
+  - `dplus.apk` - May not play videos (hit or miss). If you need the official APK, do note it will try to connect to the Amazon Appstore and show an annoying dialog, but should otherwise work fine
+- **Smarttube (YouTube without ads)** - I included the latest version when I made the repo, but ofcourse you can update after installing or download the latest .apk manually.
 
-I don't like Youtube ads, and neither does Smarttube (not sponsored). I included the latest version at the time of writing, but obviously you update after installing or download the latest one.  
+### More APKs
 
-To remap buttons, open the Play Store and search for "button remap". There should be two results. Install the second result. Some features are pro, and you may notice that you can't change the menu button functions. You can override this by using the "add buttons" option, clicking on the blue +, and pressing the key of which you want to map  
+[This repository](https://github.com/esc0rtd3w/firestick-loader) contains a LOT more APKs if you're looking for that. However, you will still need to follow this guide to first get your Firestick onto LOS.
 
-In order to exit adding custom buttons, you may notice the back button does not work. You will need to shell into the device. Once you have a shell open, you can use `input keyevent 4` as back button, `input keyevent 22` as DPAD right, and `input keyevent 23` as enter.  
+## Button Remapping
 
-If you map one of your buttons to the power menu to access bootloader, you will first need to enable the advanced reboot menu. Open the settings app from inside the app drawer, open developer options, and enable "Advanced reboot". Once you open the power menu, click reboot and it will give you a selection.  
+1. Open the Play Store and search for "button remap"
+2. Install the second result
+3. Some features are pro. To change menu button functions, use the "add buttons" option, click the blue +, and press the key you want to map
 
-[This repository](https://github.com/esc0rtd3w/firestick-loader) contains a LOT more APKs if you're looking for that. However, you will still need to follow this guide to first get your Firestick onto LOS. 
+**Note:** The Power button on your remote is not remappable (it only toggles device sleep mode), and the Alexa button does not activate the Google Assistant. A Google APK is included which should enable the Assistant.
 
-Thank you to the developers for making this possible! [k4y0z](https://github.com/k4y0z), xyz, [diegocr](https://github.com/diegocr), [R0rt1z2](https://github.com/R0rt1z2)
+### Exiting Custom Button Setup
+
+Unfortunately, the back button may not work in this mode. If so, you will need to shell into the device and use:
+- `input keyevent 4` - Back button
+- `input keyevent 22` - DPAD right
+- `input keyevent 23` - Enter
+
+### Advanced Reboot Menu
+
+To access bootloader from a remapped button:
+1. Open the settings app from inside the app drawer
+2. Open Developer Options
+3. Enable "Advanced reboot"
+4. When you open the power menu, click reboot and it will give you a selection
+
+## ⚠️ Important Notes
+
+- **Do not** transfer APKs into storage while in TWRP, as you cannot delete them once in LOS because they belong to root (UNLESS you settle on rooting the stick)
+- Remember, ADB shell over USB cannot be used on first boot (if you do NOT transfer the key) as you need some way to accept the pairing request (use HDMI-CEC or USB-OTG if possible).
+
+## Credits
+
+Thank you to the developers for making this possible!
+- [k4y0z](https://github.com/k4y0z)
+- [xyz](https://github.com/xyzz)
+- [diegocr](https://github.com/diegocr)
+- [R0rt1z2](https://github.com/R0rt1z2)
