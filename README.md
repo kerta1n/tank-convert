@@ -6,6 +6,13 @@ Convert your 2nd gen Amazon Fire Stick to Lineage 12/Android 5.1 (clean Android 
 
 This repository contains everything you need (minus the Lineage OS zip) to convert a 2nd gen Amazon Fire Stick to Lineage 12/Android 5.1. Currently, Android 5.1 is the only newest version available for this hardware, but there's a device tree for Android 7 available [here](https://github.com/cmtank/device_amazon_tank/tree/cm-14.1). If you know how to build LOS with different trees and actually do, please open an issue and I will link it.
 
+
+> [!WARNING]
+> **AndroidFileHost has permanently shut down.** The direct download links for Lineage OS and OpenGAPPS listed in the "Downloads" section are no longer functional.
+>
+> Before beginning installation, please check [Issue #6](../../issues/6) for working mirror links and updated file sources.
+
+
 ## What You'll Need
 
 ### Hardware
@@ -49,7 +56,7 @@ Run the `amonet/boot-recovery.sh` script as sudo, and **AFTER** you run it plug 
 
 ### Remote Control Options
 
-**⚠️ Important:** In order to control your Fire Stick, your remote will need to have a Power button, otherwise the gen1 remote will not show up while trying to pair. This is due to older remotes using WiFi Direct, while newer ones use Bluetooth.
+**⚠️ Important:** In order to control your Fire Stick, your remote will need to have a Power button, otherwise the Gen 1 remote will not show up while trying to pair. This is due to older remotes using WiFi Direct, while newer ones use Bluetooth.
 
 **Alternative control methods:**
 - USB-OTG hub with keyboard and mouse
