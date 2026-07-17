@@ -15,22 +15,23 @@ jobs:
   append-asset:
     runs-on: ubuntu-latest
     steps:
-      # 1. Download the ZIP file that is already attached to the release
+      # 1. Download using your explicit repository target
       - name: Download ZIP from the Release
         run: gh release download "${{ inputs.tag_name }}" --pattern "*.zip"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }} # Tells gh which repository to target
           
       # 2. Checksum whatever ZIP file was downloaded
       - name: Generate MD5 Checksum
         run: md5sum *.zip > checksum.txt
 
-      # 3. Use 'gh' to upload to the release linked to the chosen tag
+      # 3. Upload using your explicit repository target
       - name: Upload Checksum via GitHub CLI
         run: gh release upload "${{ inputs.tag_name }}" checksum.txt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+          GH_REPO: ${{ github.repository }} # Tells gh which repository to target
 
 ## How to run it manually for your existing tag:
 
