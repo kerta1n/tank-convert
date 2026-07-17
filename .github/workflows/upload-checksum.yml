@@ -1,0 +1,37 @@
+name: Attach Checksum to Existing Release
+
+on:
+  workflow_dispatch: # Enables the manual "Run workflow" button
+
+permissions:
+  contents: write # Required for 'gh' to modify the release
+
+jobs:
+  append-asset:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Download the ZIP file that is already attached to the release
+      - name: Download ZIP from the Release
+        run: gh release download "${{ github.ref_name }}" --pattern "*.zip"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 2. Checksum whatever ZIP file was downloaded
+      - name: Generate MD5 Checksum
+        run: md5sum *.zip > checksum.txt
+
+      # 3. Use 'gh' to upload to the release linked to the chosen branch/tag
+      - name: Upload Checksum via GitHub CLI
+        run: gh release upload "${{ github.ref_name }}" checksum.txt
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+## How to run it manually for your existing tag:
+
+###   1. Commit this file to your default branch (usually main).
+###   2. Go to your repository on GitHub.com and click the Actions tab.
+###   3. Select "Attach Checksum to Existing Release" from the left sidebar.
+###   4. Click the Run workflow dropdown on the right.
+###   5. In the "Use workflow from" dropdown, type or select your existing date tag.
+###   6. Click the green Run workflow button.
