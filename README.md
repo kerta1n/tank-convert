@@ -46,7 +46,7 @@ Follow the guide here: https://forum.xda-developers.com/t/rom-unlocked-tank-line
 ## Troubleshooting
 
 ### "Downgrade failure" error
-Comment out the if loop, lines 114-116 under [`amonet/modules/main.py`](amonet-tank-v1.2.2/amonet/modules/main.py#L114-L117) and try again.
+Comment out the if loop, lines 114-116 under [`amonet/modules/main.py`](amonet-tank-v1.2.2/amonet/modules/main.py#L114-L116) and try again.
 
 ### Cannot reboot into Fastboot
 Follow these instructions using the preincluded gpt folder: https://forum.xda-developers.com/t/unlock-root-twrp-unbrick-fire-tv-stick-2nd-gen-tank.3907002/post-79056952
