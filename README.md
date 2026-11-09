@@ -7,8 +7,11 @@ Convert your 2nd gen Amazon Fire Stick to LineageOS (clean, FOSS Android TV with
 This repository contains everything you need to convert a 2nd gen Amazon Fire Stick to Lineage 12/Android 5.1. 
 
 > [!IMPORTANT]
-> **Currently, Android 5.1 is the only newest available Lineage version for this hardware.** 
-> However, there is actually a device tree for Android 7 available [here](https://github.com/cmtank/device_amazon_tank/tree/cm-14.1) (whether it is finished or not is unconfirmed). If you know how to build LOS with different trees and actually do build a ZIP, please open an issue.
+> As of 11/9/2026, Rortiz2 has just released a 14.1 build for this device, and reports that most things are working except for [Netflix and Dolby](https://xdaforums.com/t/rom-unlocked-tank-lineageos-12-1.3961110/post-90811684).
+> 
+> Of course its not fully stable yet, and until it's been out for month I'll keep the below directions in place (to install Lineage 12).
+>
+> But if you'd like to use this build, do not use the file from Releases, and instead download both [LOS and GAPPS from his amazon-oss/releases repo](https://github.com/amazon-oss/releases/releases/tag/lineage-14.1-tank-v0.1) instead.
 
 ## What You'll Need
 
